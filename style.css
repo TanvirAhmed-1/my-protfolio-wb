@@ -7,6 +7,10 @@
 
 }
 
+.hide{
+    visibility: hidden;
+}
+
 .nav{
     display: flex;
     justify-content: space-around;
@@ -164,26 +168,109 @@ main{
 .iin{
     align-items: center;
 }
-.do{
-    height: 300px;
-    width: 600px;
-    margin:100px auto;
-}
-.do-title{
+
+/* node */
+.flex{
     display: flex;
+}
+.header-h1{
+    font-size: 2.2rem;
+}
+
+/* what i do */
+
+
+.do{
+   max-width: 1140px;
+    margin:0px auto;
+    flex-direction: column;
+    /* border: 2px solid turquoise; */
+}
+
+.do-title{
+    max-width: 905px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.do-title h1{
+    margin: 20px;
+}
+
+.SEC-SKILL{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    /* max-width: 260px; */
+
+}
+.SKILL
+ {
+    border: 1px solid rgb(177, 162, 162);
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+
+.SKIL-P{
+font-size: 1rem;
+line-height:1.8rem;
+color:rgba(117, 117, 117, 1);
+opacity: 0.8;
+text-align: c;
+}
+.skill-title{ 
+    text-align: start;
+}
+.div-img img{
+   width:20%; 
+   margin-bottom: 20px;
+}
+.SEC-SKILL h3{
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* responsive what i do */
+@media screen and (max-width: 567px){
+
+   .do{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+   } 
+   .SEC-SKILL{
+    grid-template-columns:1fr ;
+    justify-content: center;
+   }
+   .skill-title{
+    flex-direction:column;
+    align-items: center;
+    margin-top: 10px;
+   }
+   .SKILL{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.do-title h2{
-    font-size: 30px;
-    font-weight: 600;
-}
-.do-title p{
-    font-size: 14px;
+    border:1ppx solid rgb(160, 148, 148)
+   }
+   .div-img img{
+    /* width: 100%; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+   .div-img,
+   .SEC-SKILL h3
+   {
     text-align: center;
-    opacity: 0.6;
-    font-weight: 300;
-    line-height: 25px;
-    padding-top: 20px;
+   }
+
+   .do-title{
+
+   }
 }
