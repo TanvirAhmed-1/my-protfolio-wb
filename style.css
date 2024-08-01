@@ -7,16 +7,17 @@
 
 }
 
-.hide{
-    visibility: hidden;
-}
+
+/* nab bar style */
 
 .nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 40px;
-    gap: 30px;
+    padding-top: 50px;
+    /* margin-right:226px;
+    margin-left: 226px; */
+
 }
 .nav ul{
     list-style: none;
@@ -24,14 +25,14 @@
 .nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size:1.25rem;
     font-family: "Open Sans", sans-serif;
 }
 .nav h1 span{
     color:rgba(253, 110, 10, 1);
 }
 .nav h1{
-    font-size: 45px;
+    font-size:2.81rem;
     /* font-weight:500; */
     letter-spacing:2px;
 
@@ -43,13 +44,14 @@
     gap: 40px;
 }
 header{
-    width:100%;
-    height:43rem;
+    max-width: 1600px;
+    max-height: 836px;
     background-image: url('../images/developer.png'),url('../images/header_bg.png');
     background-repeat: no-repeat;
     /* background-size: cover; */
  background-position: top left, bottom right;
  background-color: rgba(255, 248, 243, 1);
+ margin-left: 10px;
 
 }
 .btn{
@@ -64,8 +66,9 @@ header{
 }
 .heade-title{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    /* justify-content:space-evenly; */
+    align-items:center;
+    gap: 20px;
     
 }
 .title h4{
@@ -74,19 +77,23 @@ header{
 
 }
 .title h1{
-    font-size:70px;
+    font-size:4rem;
 }
 .title p{
-    font-size: 15px;
+    font-size: 1.1rem;
     opacity: 0.6;
-    padding: ;
+    text-align: center;
+    font-weight: 500;
+    line-height:30px ;
+    color: #757575;
 
 }
 .title{
-
-    margin-left:auto 300px;
-    width: 50%;
+   margin-right: 167px;
+   max-width: 585px;
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 .button{
     padding-top: 30px;
@@ -98,64 +105,81 @@ header{
     padding-left:400px;
 } */
 .header-img img {
-    height: 568px;
-    padding-top: 20px;  
-}
-main{
-    height: ;
-    margin: 200px auto;
+    width:100%;
+    margin-top: 47px;
 
 }
+
+.header-img{
+
+    max-width: 584px;
+    margin: 0px left;
+    margin-bottom: -5px;
+    margin-right: 20px;
+}
+
+
+
+/* about section style */
+
 .about{
-    height: 500px;
-    width: 900px;
-    margin: 200px auto;
-    background-color:rgba(255, 248, 243, 1);
+    max-width: 1140px;
+    margin: 0px auto;
+    background-color:#FFF8F3;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 131px 156px; */
+    margin-top: 130px;
+    margin-bottom: 130px;
+    border-radius: 10px;
 
 
 }
 .about-title{
-    width: 650px;
-    height: 300px;
-   
+    
+    max-width:827px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
     flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 131px 156px;
+    border: 1px solid black;
+
 }
 .about-title h2{
-    font-size: 30px;
+    font-size:1.85rem;
     text-align: center;
     font-weight: 600;
     padding-bottom: 20px;
 
 }
 .pp{
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
-    opacity: 0.6;
-    font-weight: 300;
-    line-height: 25px;
+    /* opacity: 0.6; */
+    /* font-weight: 300; */
+    line-height: 30px;
+    color: #757575;
    
 }
-.info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .info-title{
     display: flex;
-    /* justify-content:space-around; */
+    justify-content:space-between;
     align-items: center;
-    gap: 30px;
+    gap:80px;
     margin-top: 60px;
+    max-width: 782px;
+    margin:25px auto;
 }
 .info-title div p:first-child{
-    font-size:12px;
+    font-size:0.8rem;
     opacity: 0.6;
     text-align: center;
 
@@ -233,12 +257,82 @@ text-align: c;
     margin-bottom: 20px;
 }
 
+/* summary for resume */
+
+
+.resume-div{
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-direction: column;
+  /* text-align: center; */
+  margin-top: 100px;
+}
+.div-res{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    margin-top: 100px;
+}
+.education-info,
+.Experience-div
+{
+
+    max-width: 511px;
+    text-align: start;
+    margin: 30px 0px;
+}
+.resume h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #474747;
+}
+.resume h4{
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #474747;
+    margin-top: 10px;
+}
+.resume p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #757575;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.resume hr{
+    background-color: #D1D1D1;
+}
+.education h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #474747;
+}
+.Experience h1{
+
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #474747;
+
+}
+.resume ,.h{
+    color:black;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+
 
 /* responsive what i do */
 @media screen and (max-width: 567px){
 
    .do{
-    margin: 0 auto;
+    margin:15px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -270,7 +364,60 @@ text-align: c;
     text-align: center;
    }
 
-   .do-title{
+   .nav
+   {
+    flex-direction:column-reverse;
+    gap: 30px;
+    margin-bottom: 30px;
+   justify-content: center;
+   margin-left: 0;
 
    }
+
+   .heade-title{
+    justify-content: center;
+    flex-direction: column;
+   }
+   .header-img img{
+    display: none;
+   }
+   header{
+    margin-left: 0px;
+   }
+   .about,
+   .about-title,
+   .info-title
+   {
+    flex-direction: column;
+    justify-content: center;
+   }
+   .about-title{
+    width: auto;
+   }
+   .about-title{
+     margin: 15px;
+    text-align: center;
+     padding: 20px;
+     font-weight: 600;
+     line-height: 30px;
+   }
+   .tanvir{
+    text-align: s;
+   }
+   /* resume */
+   .resume-div{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .div-res{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
+   }
+   .education-info,
+.Experience-div{
+    text-align: center;
+    padding: 10px;
+    
+}
 }
